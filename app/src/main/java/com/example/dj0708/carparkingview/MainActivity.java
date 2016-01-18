@@ -123,8 +123,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        mImageView = (ImageView)this.findViewById(R.id.car_park);
-//        mImageView.setImageDrawable(getResources().getDrawable(R.drawable.car_park));
 
         turnLeftBtn = (Button)findViewById(R.id.turn_left);
         addTurnLeftListener();
@@ -182,19 +180,17 @@ public class MainActivity extends Activity {
         backRightNineImg = (ImageView)findViewById(R.id.back_right_nine);
         backRightTenImg = (ImageView)findViewById(R.id.back_right_ten);
 
-
-
         forwardTurnLeftBtn = (Button)findViewById(R.id.forward_turn_left);
-//        addForwardTurnLeftListener();
+        addForwardTurnLeftListener();
 
         forwardMidRightBtn = (Button)findViewById(R.id.forward_mid_right);
-//        addForwardMidRightListener();
+        addForwardMidRightListener();
 
         forwardMidLeftBtn = (Button)findViewById(R.id.forward_mid_left);
-//        addForwardMidLeftListener();
+        addForwardMidLeftListener();
 
         forwardTurnRightBtn = (Button)findViewById(R.id.forward_turn_right);
-//        addForwardTurnRightListener();
+        addForwardTurnRightListener();
 
         forwardLeftOneImg = (ImageView)findViewById(R.id.forward_left_one);
         forwardLeftTwoImg = (ImageView)findViewById(R.id.forward_left_two);
@@ -207,38 +203,38 @@ public class MainActivity extends Activity {
         forwardLeftNineImg = (ImageView)findViewById(R.id.forward_left_nine);
         forwardLeftTenImg = (ImageView)findViewById(R.id.forward_left_ten);
 
-        backMidLeftOneImg = (ImageView)findViewById(R.id.back_mid_left_one);
-        backMidLeftTwoImg = (ImageView)findViewById(R.id.back_mid_left_two);
-        backMidLeftThreeImg = (ImageView)findViewById(R.id.back_mid_left_three);
-        backMidLeftFourImg = (ImageView)findViewById(R.id.back_mid_left_four);
-        backMidLeftFiveImg = (ImageView)findViewById(R.id.back_mid_left_five);
-        backMidLeftSixImg = (ImageView)findViewById(R.id.back_mid_left_six);
-        backMidLeftSevenImg = (ImageView)findViewById(R.id.back_mid_left_seven);
-        backMidLeftEightImg = (ImageView)findViewById(R.id.back_mid_left_eight);
-        backMidLeftNineImg = (ImageView)findViewById(R.id.back_mid_left_nine);
-        backMidLeftTenImg = (ImageView)findViewById(R.id.back_mid_left_ten);
+        forwardMidLeftOneImg = (ImageView)findViewById(R.id.forward_mid_left_one);
+        forwardMidLeftTwoImg = (ImageView)findViewById(R.id.forward_mid_left_two);
+        forwardMidLeftThreeImg = (ImageView)findViewById(R.id.forward_mid_left_three);
+        forwardMidLeftFourImg = (ImageView)findViewById(R.id.forward_mid_left_four);
+        forwardMidLeftFiveImg = (ImageView)findViewById(R.id.forward_mid_left_five);
+        forwardMidLeftSixImg = (ImageView)findViewById(R.id.forward_mid_left_six);
+        forwardMidLeftSevenImg = (ImageView)findViewById(R.id.forward_mid_left_seven);
+        forwardMidLeftEightImg = (ImageView)findViewById(R.id.forward_mid_left_eight);
+        forwardMidLeftNineImg = (ImageView)findViewById(R.id.forward_mid_left_nine);
+        forwardMidLeftTenImg = (ImageView)findViewById(R.id.forward_mid_left_ten);
 
-        backMidRightOneImg = (ImageView)findViewById(R.id.back_mid_right_one);
-        backMidRightTwoImg = (ImageView)findViewById(R.id.back_mid_right_two);
-        backMidRightThreeImg = (ImageView)findViewById(R.id.back_mid_right_three);
-        backMidRightFourImg = (ImageView)findViewById(R.id.back_mid_right_four);
-        backMidRightFiveImg = (ImageView)findViewById(R.id.back_mid_right_five);
-        backMidRightSixImg = (ImageView)findViewById(R.id.back_mid_right_six);
-        backMidRightSevenImg = (ImageView)findViewById(R.id.back_mid_right_seven);
-        backMidRightEightImg = (ImageView)findViewById(R.id.back_mid_right_eight);
-        backMidRightNineImg = (ImageView)findViewById(R.id.back_mid_right_nine);
-        backMidRightTenImg = (ImageView)findViewById(R.id.back_mid_right_ten);
+        forwardMidRightOneImg = (ImageView)findViewById(R.id.forward_mid_right_one);
+        forwardMidRightTwoImg = (ImageView)findViewById(R.id.forward_mid_right_two);
+        forwardMidRightThreeImg = (ImageView)findViewById(R.id.forward_mid_right_three);
+        forwardMidRightFourImg = (ImageView)findViewById(R.id.forward_mid_right_four);
+        forwardMidRightFiveImg = (ImageView)findViewById(R.id.forward_mid_right_five);
+        forwardMidRightSixImg = (ImageView)findViewById(R.id.forward_mid_right_six);
+        forwardMidRightSevenImg = (ImageView)findViewById(R.id.forward_mid_right_seven);
+        forwardMidRightEightImg = (ImageView)findViewById(R.id.forward_mid_right_eight);
+        forwardMidRightNineImg = (ImageView)findViewById(R.id.forward_mid_right_nine);
+        forwardMidRightTenImg = (ImageView)findViewById(R.id.forward_mid_right_ten);
 
-        backRightOneImg = (ImageView)findViewById(R.id.back_right_one);
-        backRightTwoImg = (ImageView)findViewById(R.id.back_right_two);
-        backRightThreeImg = (ImageView)findViewById(R.id.back_right_three);
-        backRightFourImg = (ImageView)findViewById(R.id.back_right_four);
-        backRightFiveImg = (ImageView)findViewById(R.id.back_right_five);
-        backRightSixImg = (ImageView)findViewById(R.id.back_right_six);
-        backRightSevenImg = (ImageView)findViewById(R.id.back_right_seven);
-        backRightEightImg = (ImageView)findViewById(R.id.back_right_eight);
-        backRightNineImg = (ImageView)findViewById(R.id.back_right_nine);
-        backRightTenImg = (ImageView)findViewById(R.id.back_right_ten);
+        forwardRightOneImg = (ImageView)findViewById(R.id.forward_right_one);
+        forwardRightTwoImg = (ImageView)findViewById(R.id.forward_right_two);
+        forwardRightThreeImg = (ImageView)findViewById(R.id.forward_right_three);
+        forwardRightFourImg = (ImageView)findViewById(R.id.forward_right_four);
+        forwardRightFiveImg = (ImageView)findViewById(R.id.forward_right_five);
+        forwardRightSixImg = (ImageView)findViewById(R.id.forward_right_six);
+        forwardRightSevenImg = (ImageView)findViewById(R.id.forward_right_seven);
+        forwardRightEightImg = (ImageView)findViewById(R.id.forward_right_eight);
+        forwardRightNineImg = (ImageView)findViewById(R.id.forward_right_nine);
+        forwardRightTenImg = (ImageView)findViewById(R.id.forward_right_ten);
     }
 
     private void addTurnLeftListener() {
@@ -518,6 +514,290 @@ public class MainActivity extends Activity {
                     case 10: {
                         backMidRightOneImg.setVisibility(View.VISIBLE);
                         midRightCount = 1;
+                        break;
+                    }
+                }
+            }
+        });
+    }
+
+    private void addForwardTurnLeftListener() {
+        forwardTurnLeftBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                forwardLeftOneImg.setVisibility(View.INVISIBLE);
+                forwardLeftTwoImg.setVisibility(View.INVISIBLE);
+                forwardLeftThreeImg.setVisibility(View.INVISIBLE);
+                forwardLeftFourImg.setVisibility(View.INVISIBLE);
+                forwardLeftFiveImg.setVisibility(View.INVISIBLE);
+                forwardLeftSixImg.setVisibility(View.INVISIBLE);
+                forwardLeftSevenImg.setVisibility(View.INVISIBLE);
+                forwardLeftEightImg.setVisibility(View.INVISIBLE);
+                forwardLeftNineImg.setVisibility(View.INVISIBLE);
+                forwardLeftTenImg.setVisibility(View.INVISIBLE);
+
+                switch (forwardLeftCount) {
+                    case 1: {
+                        forwardLeftTwoImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 2: {
+                        forwardLeftThreeImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 3: {
+                        forwardLeftFourImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 4: {
+                        forwardLeftFiveImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 5: {
+                        forwardLeftSixImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 6: {
+                        forwardLeftSevenImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 7: {
+                        forwardLeftEightImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 8: {
+                        forwardLeftNineImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 9: {
+                        forwardLeftTenImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount++;
+                        break;
+                    }
+                    case 10: {
+                        forwardLeftOneImg.setVisibility(View.VISIBLE);
+                        forwardLeftCount = 1;
+                        break;
+                    }
+                }
+            }
+        });
+    }
+
+    private void addForwardTurnRightListener() {
+        forwardTurnRightBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                forwardRightOneImg.setVisibility(View.INVISIBLE);
+                forwardRightTwoImg.setVisibility(View.INVISIBLE);
+                forwardRightThreeImg.setVisibility(View.INVISIBLE);
+                forwardRightFourImg.setVisibility(View.INVISIBLE);
+                forwardRightFiveImg.setVisibility(View.INVISIBLE);
+                forwardRightSixImg.setVisibility(View.INVISIBLE);
+                forwardRightSevenImg.setVisibility(View.INVISIBLE);
+                forwardRightEightImg.setVisibility(View.INVISIBLE);
+                forwardRightNineImg.setVisibility(View.INVISIBLE);
+                forwardRightTenImg.setVisibility(View.INVISIBLE);
+
+                switch (forwardRightCount) {
+                    case 1: {
+                        forwardRightTwoImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 2: {
+                        forwardRightThreeImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 3: {
+                        forwardRightFourImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 4: {
+                        forwardRightFiveImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 5: {
+                        forwardRightSixImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 6: {
+                        forwardRightSevenImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 7: {
+                        forwardRightEightImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 8: {
+                        forwardRightNineImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 9: {
+                        forwardRightTenImg.setVisibility(View.VISIBLE);
+                        forwardRightCount++;
+                        break;
+                    }
+                    case 10: {
+                        forwardRightOneImg.setVisibility(View.VISIBLE);
+                        forwardRightCount = 1;
+                        break;
+                    }
+                }
+            }
+        });
+    }
+
+    private void addForwardMidLeftListener() {
+        forwardMidLeftBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                forwardMidLeftOneImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftTwoImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftThreeImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftFourImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftFiveImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftSixImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftSevenImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftEightImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftNineImg.setVisibility(View.INVISIBLE);
+                forwardMidLeftTenImg.setVisibility(View.INVISIBLE);
+
+                switch (forwardMidLeftCount) {
+                    case 1: {
+                        forwardMidLeftTwoImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 2: {
+                        forwardMidLeftThreeImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 3: {
+                        forwardMidLeftFourImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 4: {
+                        forwardMidLeftFiveImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 5: {
+                        forwardMidLeftSixImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 6: {
+                        forwardMidLeftSevenImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 7: {
+                        forwardMidLeftEightImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 8: {
+                        forwardMidLeftNineImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 9: {
+                        forwardMidLeftTenImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount++;
+                        break;
+                    }
+                    case 10: {
+                        forwardMidLeftOneImg.setVisibility(View.VISIBLE);
+                        forwardMidLeftCount = 1;
+                        break;
+                    }
+                }
+            }
+        });
+    }
+
+    private void addForwardMidRightListener() {
+        forwardMidRightBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                forwardMidRightOneImg.setVisibility(View.INVISIBLE);
+                forwardMidRightTwoImg.setVisibility(View.INVISIBLE);
+                forwardMidRightThreeImg.setVisibility(View.INVISIBLE);
+                forwardMidRightFourImg.setVisibility(View.INVISIBLE);
+                forwardMidRightFiveImg.setVisibility(View.INVISIBLE);
+                forwardMidRightSixImg.setVisibility(View.INVISIBLE);
+                forwardMidRightSevenImg.setVisibility(View.INVISIBLE);
+                forwardMidRightEightImg.setVisibility(View.INVISIBLE);
+                forwardMidRightNineImg.setVisibility(View.INVISIBLE);
+                forwardMidRightTenImg.setVisibility(View.INVISIBLE);
+
+                switch (forwardMidRightCount) {
+                    case 1: {
+                        forwardMidRightTwoImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 2: {
+                        forwardMidRightThreeImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 3: {
+                        forwardMidRightFourImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 4: {
+                        forwardMidRightFiveImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 5: {
+                        forwardMidRightSixImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 6: {
+                        forwardMidRightSevenImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 7: {
+                        forwardMidRightEightImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 8: {
+                        forwardMidRightNineImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 9: {
+                        forwardMidRightTenImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount++;
+                        break;
+                    }
+                    case 10: {
+                        forwardMidRightOneImg.setVisibility(View.VISIBLE);
+                        forwardMidRightCount = 1;
                         break;
                     }
                 }
