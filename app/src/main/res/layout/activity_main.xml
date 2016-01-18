@@ -39,15 +39,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:background="#fcff13">
+        android:gravity="center">
 
         <LinearLayout
             android:layout_width="145dp"
             android:layout_height="137dp"
             android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:background="#c4bfbf">
+            android:gravity="center">
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -419,15 +417,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:background="#fcff13">
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/car_park"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:paddingLeft="15dp"
+            android:paddingLeft="0dp"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/car_body"
             />
@@ -440,15 +437,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:background="#fcff13">
+        android:gravity="center">
 
         <LinearLayout
             android:layout_width="145dp"
             android:layout_height="137dp"
             android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:background="#c4bfbf">
+            android:gravity="center">
 
             <FrameLayout
                 android:layout_width="wrap_content"
