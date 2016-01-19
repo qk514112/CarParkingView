@@ -1,6 +1,7 @@
 package com.example.dj0708.carparkingview;
 
 import android.app.Activity;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ public class MainActivity extends Activity {
     private Button turnRightBtn;
     private Button midLeftBtn;
     private Button midRightBtn;
+    private Button radianBtn;
 
     private Button forwardTurnLeftBtn;
     private Button forwardTurnRightBtn;
@@ -62,8 +64,9 @@ public class MainActivity extends Activity {
     private ImageView backRightNineImg;
     private ImageView backRightTenImg;
 
-
-
+    private ImageView leftRadian_40;
+    private ImageView midRadian;
+    private ImageView rightRadian_40;
 
     private ImageView forwardLeftOneImg;
     private ImageView forwardLeftTwoImg;
@@ -113,6 +116,7 @@ public class MainActivity extends Activity {
     private int midLeftCount = 1;
     private int midRightCount = 1;
     private int rightCount = 1;
+    private int radianCount = 1;
 
     private int forwardLeftCount = 1;
     private int forwardMidLeftCount = 1;
@@ -135,6 +139,9 @@ public class MainActivity extends Activity {
 
         turnRightBtn = (Button)findViewById(R.id.turn_right);
         addTurnRightListener();
+
+        radianBtn = (Button)findViewById(R.id.radian_btn);
+        addMidRadianListener();
 
         backLeftOneImg = (ImageView)findViewById(R.id.back_left_one);
         backLeftTwoImg = (ImageView)findViewById(R.id.back_left_two);
@@ -179,6 +186,10 @@ public class MainActivity extends Activity {
         backRightEightImg = (ImageView)findViewById(R.id.back_right_eight);
         backRightNineImg = (ImageView)findViewById(R.id.back_right_nine);
         backRightTenImg = (ImageView)findViewById(R.id.back_right_ten);
+
+        leftRadian_40 = (ImageView)findViewById(R.id.left_radian_40);
+        midRadian = (ImageView)findViewById(R.id.mid_radian);
+        rightRadian_40 = (ImageView)findViewById(R.id.right_radian_40);
 
         forwardTurnLeftBtn = (Button)findViewById(R.id.forward_turn_left);
         addForwardTurnLeftListener();
@@ -514,6 +525,35 @@ public class MainActivity extends Activity {
                     case 10: {
                         backMidRightOneImg.setVisibility(View.VISIBLE);
                         midRightCount = 1;
+                        break;
+                    }
+                }
+            }
+        });
+    }
+
+    private void addMidRadianListener() {
+        radianBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                leftRadian_40.setVisibility(View.INVISIBLE);
+                midRadian.setVisibility(View.INVISIBLE);
+                rightRadian_40.setVisibility(View.INVISIBLE);
+
+                switch (radianCount) {
+                    case 1: {
+                        midRadian.setVisibility(View.VISIBLE);
+                        radianCount++;
+                        break;
+                    }
+                    case 2: {
+                        rightRadian_40.setVisibility(View.VISIBLE);
+                        radianCount++;
+                        break;
+                    }
+                    case 3: {
+                        leftRadian_40.setVisibility(View.VISIBLE);
+                        radianCount = 1;
                         break;
                     }
                 }
