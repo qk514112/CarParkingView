@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends Activity {
-    private ImageView mImageView;
     private Button turnLeftBtn;
     private Button turnRightBtn;
     private Button midLeftBtn;
